@@ -1,3 +1,13 @@
+public class Node 
+{
+    public KeyValuePair<int, string> Value {get; set;}
+    public Node? Left {get; set;}
+    public Node? Right {get; set;}
+    public Node(KeyValuePair<int, string> value){
+        Value = value;
+    }
+}
+
 public class SortedKVPairsStorage
 {
     private Node? _tree;
